@@ -2,7 +2,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 
-const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:5000';
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
 
 export async function GET(request: NextRequest) {
   try {
@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get('limit') || '12';
 
     let endpoint: string;
-    
+    console.log("BACKEND_URL", BACKEND_URL);
     if (query) {
       // If there's a query, use the search endpoint
       endpoint = `${BACKEND_URL}/api/dictionary/search?q=${encodeURIComponent(query)}&lang=${lang}`;
@@ -58,6 +58,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify(body),
     });
+console.log("response", response);
 
     // Check if response is ok before trying to parse JSON
     if (!response.ok) {

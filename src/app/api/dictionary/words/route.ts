@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const BACKEND_API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
 
+console.log("BACKEND_API_URL", BACKEND_API_URL);
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const lang = searchParams.get('lang') || 'en';
