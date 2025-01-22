@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Türkçe-İngilizce Sözlük
 
-## Getting Started
+Modern ve kullanıcı dostu bir web uygulaması olan bu sözlük, dil öğrenenler ve çevirmenler için kapsamlı bir Türkçe-İngilizce çeviri aracıdır.
 
-First, run the development server:
+## ✨ Özellikler
 
+- **Çift Dilli Arama**
+  - Türkçe'den İngilizce'ye
+  - İngilizce'den Türkçe'ye
+  - Anlık arama önerileri
+
+- **Telaffuz Desteği** 🔊
+  - İngilizce kelimeler için Free Dictionary API
+  - Türkçe kelimeler için tarayıcı ses sentezi
+
+- **Detaylı Kelime Bilgisi**
+  - Çoklu çeviriler ve anlamlar
+  - Kelime türleri (isim, fiil, sıfat vb.)
+  - Örnek cümleler
+  - CEFR seviye gösterimi (A1-C2)
+
+- **Kullanıcı Deneyimi**
+  - Koyu/Açık tema desteği
+  - Mobil uyumlu tasarım
+  - Sade ve modern arayüz
+
+## 🔧 Teknolojiler
+
+- **Frontend**
+  - Next.js 14.1.0
+  - TypeScript
+  - Tailwind CSS
+  - Material UI
+
+- **API**
+  - RESTful mimari
+  - Free Dictionary API entegrasyonu
+
+## 💻 Kurulum
+
+1. Projeyi klonlayın:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/kullaniciadi/turkce-ingilizce-sozluk.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Proje dizinine gidin:
+```bash
+cd turkce-ingilizce-sozluk
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Geliştirme sunucusunu başlatın:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Ortam Değişkenleri
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Proje kök dizininde `.env.local` dosyası oluşturun:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+API_URL=api_adresiniz
+# Diğer gerekli ortam değişkenleri
+```
 
-## Deploy on Vercel
+## 📁 Proje Yapısı
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/           # Next.js uygulama dizini
+├── components/    # Yeniden kullanılabilir bileşenler
+├── hooks/         # Özel React hook'ları
+├── styles/        # Global stiller
+└── types/         # TypeScript tip tanımlamaları
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Test
+
+```bash
+npm run test
+```
+
+## 🚀 Canlıya Alma
+
+Vercel ile hızlı deployment:
+
+1. GitHub'a kodunuzu gönderin
+2. Vercel'de projenizi import edin
+3. Otomatik dağıtım başlayacaktır
+
+## 🤝 Katkıda Bulunma
+
+1. Projeyi fork edin
+2. Yeni bir branch oluşturun (`git checkout -b ozellik/yeni-ozellik`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`)
+4. Branch'inizi push edin (`git push origin ozellik/yeni-ozellik`)
+5. Pull Request oluşturun
+
+## 📝 Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
+
+## 👥 Geliştiriciler
+
+- [GitHub Profiliniz](https://github.com/kullaniciadi)
+
+## 🙏 Teşekkürler
+
+- Free Dictionary API ekibine
+- Projeye katkıda bulunan herkese
+
+---
+
+### 🌟 Bizi Destekleyin
+
+- Projeye yıldız verin ⭐
+- Hataları bildirin 🐛
+- Özellik önerilerinde bulunun 💡
